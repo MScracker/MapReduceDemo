@@ -1,4 +1,4 @@
-/**
+package com.datamining.job; /**
  * Created by wongleon on 2017/4/23.
  */
 
@@ -60,7 +60,8 @@ public class WordCount {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-
+        System.out.println(args[0]);
+        System.out.println(args[1]);
         FileSystem fs = FileSystem.get(conf);
         Path out = new Path(args[1]);
         if (fs.exists(out)) {
