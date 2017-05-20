@@ -60,7 +60,10 @@ public class WordCount {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        System.out.println(args[0]);
+		args = new String[2];
+        args[0] = "D:\\sdk\\spark-2.0.0-bin-hadoop2.6\\README.md";
+		args[1] = "./output";
+		System.out.println(args[0]);
         System.out.println(args[1]);
         FileSystem fs = FileSystem.get(conf);
         Path out = new Path(args[1]);
