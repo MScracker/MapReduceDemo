@@ -195,29 +195,11 @@
             <artifactId>crunch-core</artifactId>
             <version>0.11.0-cdh5.11.0</version>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.apache.mahout</groupId>-->
-        <!--<artifactId>mahout-core</artifactId>-->
-        <!--<version>0.9</version>-->
-        <!--<exclusions>-->
-        <!--<exclusion>-->
-        <!--<groupId>org.apache.mahout</groupId>-->
-        <!--<artifactId>mahout</artifactId>-->
-        <!--</exclusion>-->
-        <!--<exclusion>-->
-        <!--<groupId>org.apache.mahout</groupId>-->
-        <!--<artifactId>mahout-math</artifactId>-->
-        <!--</exclusion>-->
-        <!--<exclusion>-->
-        <!--<groupId>org.apache.mahout</groupId>-->
-        <!--<artifactId>mahout-hdfs</artifactId>-->
-        <!--</exclusion>-->
-        <!--<exclusion>-->
-        <!--<groupId>org.apache.mahout</groupId>-->
-        <!--<artifactId>mahout-core</artifactId>-->
-        <!--</exclusion>-->
-        <!--</exclusions>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.apache.mahout</groupId>
+            <artifactId>mahout-integration</artifactId>
+            <version>0.9</version>
+        </dependency>
     </dependencies>
 
 </project>
