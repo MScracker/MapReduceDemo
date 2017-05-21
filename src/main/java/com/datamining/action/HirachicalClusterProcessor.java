@@ -1,3 +1,5 @@
+package com.datamining.action;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -134,7 +136,7 @@ public class HirachicalClusterProcessor {
         }
 
         public Set<ClusterablePoint> getItemsInCluster() throws Exception {
-            // List<ClusterablePoint> list = new ArrayList<ClusterablePoint>();
+            // List<com.datamining.action.ClusterablePoint> list = new ArrayList<com.datamining.action.ClusterablePoint>();
             //
             // LinkedBlockingQueue<Cluster> clusters2Process = new
             // LinkedBlockingQueue<Cluster>();
@@ -284,7 +286,7 @@ public class HirachicalClusterProcessor {
         //
         // list = pairsByID.get(pair.cluster2.id);
         // if(list != null){
-        // list = new ArrayList<HirachicalClusterProcessor.ClusterPair>();
+        // list = new ArrayList<com.datamining.action.HirachicalClusterProcessor.ClusterPair>();
         // list.remove(pair.cluster2);
         // }
     }
