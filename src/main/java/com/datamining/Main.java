@@ -19,8 +19,8 @@ public class Main {
 //		String path = "D:/workspace/mahout/mr/debugout/tmp/preparePreferenceMatrix/ratingMatrix/part-r-00000";
 //		Map map = ReadArbiKV.readFromFile(path);
 //		System.out.println(map);
-		String p1 = "tmp/notUsed/part-r-00000";
-		String p2 = "tmp/observationsPerColumn.bin";
+		String p1 = "../mahout/mr/debugout/tmp/notUsed/part-r-00000";
+		String p2 = "../mahout/mr/debugout/tmp/observationsPerColumn.bin";
 		Map map = ReadArbiKV.readFromFile(new File(p1).getAbsolutePath());
 		System.out.println(map);
 		Vector vector = ReadBins.getVector(new File(p2).getAbsolutePath());
