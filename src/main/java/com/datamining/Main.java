@@ -6,9 +6,10 @@ import org.apache.mahout.math.Vector;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Map;
 
-public class Main {
+public class Main implements Serializable,Cloneable {
 
 	public static void main(String[] args) throws IOException {
 		// write your code here
@@ -25,5 +26,9 @@ public class Main {
 		System.out.println(map);
 		Vector vector = ReadBins.getVector(new File(p2).getAbsolutePath());
 		System.out.println(vector);
-	}
+
+        String curPath = System.getProperty("user.home");
+        System.out.println(curPath);
+    }
+
 }

@@ -2,9 +2,6 @@ package com.datamining.job; /**
  * Created by wongleon on 2017/4/23.
  */
 
-import java.io.IOException;
-import java.util.StringTokenizer;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -15,6 +12,9 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class WordCount {
 
@@ -61,9 +61,9 @@ public class WordCount {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 		args = new String[2];
-        args[0] = "D:\\sdk\\spark-2.0.0-bin-hadoop2.6\\README.md";
-		args[1] = "./output";
-		System.out.println(args[0]);
+        args[0] = "../../sdk/apache-mahout-distribution-0.13.0/README.md";
+        args[1] = "./output";
+        System.out.println(args[0]);
         System.out.println(args[1]);
         FileSystem fs = FileSystem.get(conf);
         Path out = new Path(args[1]);

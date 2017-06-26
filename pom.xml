@@ -8,7 +8,6 @@
     <artifactId>MapReduceDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -165,16 +164,15 @@
     </properties>
 
     <dependencies>
+        <!-- hadoop dependencies-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>${hadoop.version}</version>
+            <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-common</artifactId>
-            <version>${hadoop.version}</version>
-        </dependency>
+
+        <!-- mahout denpendencies-->
         <dependency>
             <groupId>org.apache.mahout</groupId>
             <artifactId>mahout-math</artifactId>
@@ -191,14 +189,34 @@
             <version>${mahout.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.crunch</groupId>
-            <artifactId>crunch-core</artifactId>
-            <version>0.11.0-cdh5.11.0</version>
+            <groupId>org.apache.mahout</groupId>
+            <artifactId>mahout-examples</artifactId>
+            <version>${mahout.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.mahout</groupId>
             <artifactId>mahout-integration</artifactId>
             <version>0.9</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.mahout</groupId>
+                    <artifactId>mahout-examples</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- WritableDeepCopier -->
+        <dependency>
+            <groupId>org.apache.crunch</groupId>
+            <artifactId>crunch-core</artifactId>
+            <version>0.11.0-cdh5.11.0</version>
+        </dependency>
+
+        <!--junit4-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
     </dependencies>
 
