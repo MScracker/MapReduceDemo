@@ -1,4 +1,4 @@
-package com.datamining.datastructure;
+package com.datamining.datastructure.Stings;
 
 /**
  * Created by wongleon on 2017/6/26.

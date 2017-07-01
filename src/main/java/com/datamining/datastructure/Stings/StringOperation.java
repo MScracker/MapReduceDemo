@@ -1,4 +1,4 @@
-package com.datamining.datastructure;
+package com.datamining.datastructure.Stings;
 
 import java.util.Arrays;
 
