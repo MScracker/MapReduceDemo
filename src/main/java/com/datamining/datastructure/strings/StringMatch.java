@@ -1,4 +1,4 @@
-package com.datamining.datastructure.classic;
+package com.datamining.datastructure.strings;
 
 /**
  * Created by wongleon on 2017/6/26.

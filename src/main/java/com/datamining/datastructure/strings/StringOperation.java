@@ -1,6 +1,4 @@
-package com.datamining.datastructure.classic;
-
-import java.util.Arrays;
+package com.datamining.datastructure.strings;
 
 /**
  * Created by wongleon on 2017/6/25.
