@@ -1,4 +1,4 @@
-package com.datamining.datastructure;
+package com.datamining.datastructure.classic;
 
 import java.util.Arrays;
 
@@ -41,9 +41,9 @@ public class StringOperation {
 
     public static void main(String[] args) {
         char[] s = "abcdef".toCharArray();
-//        reverse(s, 0, s.length - 1);
+        reverse(s, 0, s.length - 1);
 //        leftRotateString(s, 2);
-        leftRotateLoop(s,2);
+//        leftRotateLoop(s,2);
         System.out.println(s);
     }
 
