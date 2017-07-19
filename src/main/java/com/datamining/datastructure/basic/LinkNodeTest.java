@@ -31,7 +31,7 @@ public class LinkNodeTest {
 
         LinkNode previous = head;//保留头指针,方便断环，将头指针做前一指针
         LinkNode current = head.next;//下一指针做当前指针
-        LinkNode tmp=null;
+        LinkNode tmp = null;
 
         while (current != null) {
             tmp = current.next; //保存下一节点
